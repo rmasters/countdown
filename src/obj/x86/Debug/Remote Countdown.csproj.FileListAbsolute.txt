@@ -1,0 +1,9 @@
+C:\Users\Ross\countdown\src\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ross\countdown\src\obj\x86\Debug\Remote_Countdown.MainForm.resources
+C:\Users\Ross\countdown\src\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ross\countdown\src\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ross\countdown\src\bin\Debug\Remote Countdown.exe
+C:\Users\Ross\countdown\src\bin\Debug\Remote Countdown.pdb
+C:\Users\Ross\countdown\src\obj\x86\Debug\Remote_Countdown.Properties.Resources.resources
+C:\Users\Ross\countdown\src\obj\x86\Debug\Remote Countdown.exe
+C:\Users\Ross\countdown\src\obj\x86\Debug\Remote Countdown.pdb
