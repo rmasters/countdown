@@ -20,17 +20,35 @@ namespace Remote_Countdown
         {
             InitializeComponent();
 
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(tick);
+
             targetDateLbl.Text = "";
             remTimeLbl.Text = "";
         }
 
-        public void setCountdown()
-        {
-
-        }
-
         public void tick(object sender, EventArgs eArgs)
         {
+            if (sender == timer)
+            {
+                DateTime dt = DateTime.Now;
+
+                TimeSpan difference = dt.Subtract(target);
+                string text;
+                double days = Math.Ceiling(difference.TotalDays);
+
+                if (days < 0)
+                {
+                    // Target is in the future
+                    days = Math.Abs(days);
+                    text = String.Format("{0} days", days);
+                } else {
+                    // in the past
+                    text = String.Format("{0} days ago", days);
+                }
+
+                remTimeLbl.Text = text;
+            }
         }
 
         private void lookupUrl(object sender, KeyPressEventArgs e)
@@ -90,6 +108,9 @@ namespace Remote_Countdown
             // Convert and show the label
             target = Convert.ToDateTime(date);
             targetDateLbl.Text = target.ToLongDateString();
+
+            // Start the timer
+            timer.Start();
         }
     }
 }

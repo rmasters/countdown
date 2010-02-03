@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 78);
+            this.label2.Location = new System.Drawing.Point(10, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 2;
@@ -70,7 +70,7 @@
             // targetDateLbl
             // 
             this.targetDateLbl.AutoSize = true;
-            this.targetDateLbl.Location = new System.Drawing.Point(100, 78);
+            this.targetDateLbl.Location = new System.Drawing.Point(97, 49);
             this.targetDateLbl.Name = "targetDateLbl";
             this.targetDateLbl.Size = new System.Drawing.Size(64, 13);
             this.targetDateLbl.TabIndex = 3;
@@ -79,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 100);
+            this.label3.Location = new System.Drawing.Point(10, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 4;
@@ -88,9 +88,10 @@
             // remTimeLbl
             // 
             this.remTimeLbl.AutoSize = true;
-            this.remTimeLbl.Location = new System.Drawing.Point(100, 100);
+            this.remTimeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remTimeLbl.Location = new System.Drawing.Point(97, 71);
             this.remTimeLbl.Name = "remTimeLbl";
-            this.remTimeLbl.Size = new System.Drawing.Size(83, 13);
+            this.remTimeLbl.Size = new System.Drawing.Size(97, 13);
             this.remTimeLbl.TabIndex = 5;
             this.remTimeLbl.Text = "Remaining Time";
             // 
@@ -108,7 +109,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 240);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 106);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(375, 22);
             this.statusStrip1.TabIndex = 7;
@@ -124,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 262);
+            this.ClientSize = new System.Drawing.Size(375, 128);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.loadBtn);
             this.Controls.Add(this.remTimeLbl);
