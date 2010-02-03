@@ -29,9 +29,8 @@ namespace Remote_Countdown
 
         }
 
-        public void tick()
+        public void tick(object sender, EventArgs eArgs)
         {
-
         }
 
         private void lookupUrl(object sender, KeyPressEventArgs e)
@@ -40,6 +39,11 @@ namespace Remote_Countdown
             {
                 LoadDataFrom(dataUrlTxt.Text);
             }
+        }
+
+        private void lookupUrl(object sender, EventArgs e)
+        {
+            LoadDataFrom(dataUrlTxt.Text);
         }
 
         public void setStatus(string message, bool error = false)
@@ -86,11 +90,6 @@ namespace Remote_Countdown
             // Convert and show the label
             target = Convert.ToDateTime(date);
             targetDateLbl.Text = target.ToLongDateString();
-        }
-
-        private void loadBtn_Click(object sender, EventArgs e)
-        {
-            LoadDataFrom(dataUrlTxt.Text);
         }
     }
 }

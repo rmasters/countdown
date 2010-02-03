@@ -102,7 +102,7 @@
             this.loadBtn.TabIndex = 6;
             this.loadBtn.Text = "Load";
             this.loadBtn.UseVisualStyleBackColor = true;
-            this.loadBtn.Click += new System.EventHandler(this.loadBtn_Click);
+            this.loadBtn.Click += new System.EventHandler(this.lookupUrl);
             // 
             // statusStrip1
             // 
